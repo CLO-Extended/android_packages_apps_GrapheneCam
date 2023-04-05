@@ -1,0 +1,11 @@
+android_app_import {
+	name: "GrapheneOSCamera",
+	apk: "prebuilt/Camera.apk",
+	presigned: true,
+	overrides: ["Camera2", "GoogleCameraGo", "Aperture"],
+	dex_preopt: {
+		enabled: false,
+	},
+	product_specific: true,
+	optional_uses_libs: ["androidx.camera.extensions.impl"],
+}
